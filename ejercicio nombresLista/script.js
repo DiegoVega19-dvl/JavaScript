@@ -1,5 +1,8 @@
+
 function buscarNombre(nombres, buscar) {
-  return nombres.map(nombre => nombre.toLowerCase()).includes(buscar.toLowerCase());
+  return nombres
+    .map((nombre) => nombre.toLowerCase())
+    .includes(buscar.toLowerCase());
 }
 
 let nombres = [

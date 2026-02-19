@@ -61,3 +61,12 @@ console.log(ejemploVar);
 
 console.log(hoisting); // esto te da como resultado Undefined, no importa que se halla declarado la varible despues de esto
 var hoisting = "esto es una prueba de hoisting";
+
+var edad = prompt("ingresa tu edad: ");
+var edadInt = Number(edad);
+
+if (edadInt >= 18) {
+  alert("puedes entrar al bar");
+} else {
+  alert("no puedes entrar al bar");
+}

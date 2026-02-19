@@ -22,11 +22,11 @@ function aptitud(pokemones, promedios) {
   for (let i = 0; i < promedios.length; i++) {
     if (promedios[i] >= 70) {
       console.log(
-        `${pokemones[i]} es un Pokémon apto. tiene un promedio de:  ${promedios[i]}`
+        `${pokemones[i]} es un Pokémon apto. tiene un promedio de:  ${promedios[i]}`,
       );
     } else {
       console.log(
-        `${pokemones[i]} no es un pokemon apto. tiene un promedio de:  ${promedios[i]}`
+        `${pokemones[i]} no es un pokemon apto. tiene un promedio de:  ${promedios[i]}`,
       );
     }
   }
@@ -34,3 +34,5 @@ function aptitud(pokemones, promedios) {
 
 let promedios = calcularHabilidades(habilidades);
 aptitud(pokemones, promedios);
+
+

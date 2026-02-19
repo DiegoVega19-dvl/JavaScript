@@ -44,22 +44,18 @@ for (let i = 0; i < frutas.length; i++) {
   }
 }
 
-const miArray = ["juan", "maria", "pablo"]
+const miArray = ["juan", "maria", "pablo"];
 //agregar un valor al principio del objeto con el metodo unshift
-miArray.unshift("sandra")
-//agregar un valor al final del objeto con el metodo push 
-miArray.push("daniel")
-console.log(miArray)
+miArray.unshift("sandra");
+//agregar un valor al final del objeto con el metodo push
+miArray.push("daniel");
+console.log(miArray);
 
-
-
-const array2 = ["jose", "karla", "ramiro"]
+const array2 = ["jose", "karla", "ramiro"];
 // el metodo pop quita el ultimo valor del array
-let newArray2 = array2.pop()
-console.log(newArray2)
+let newArray2 = array2.pop();
+console.log(newArray2);
 
-
-
-
-
+var planetas = ["venus", "tierra", "marte", "urano", "saturno"];
+console.log(planetas.length);
 
