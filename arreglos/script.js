@@ -59,3 +59,6 @@ console.log(newArray2);
 var planetas = ["venus", "tierra", "marte", "urano", "saturno"];
 console.log(planetas.length);
 
+for (let i = 0; i > planetas.length; i++) {
+  console.log([i]);
+}
