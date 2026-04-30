@@ -67,3 +67,67 @@ console.log(suma(1, 2));*/
 })();*/
 
 // funciones de orden superior -------------------------->
+
+// filtrar numeros impares
+
+/*function filterOdd(numeros) {
+  const filtro = [];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 !== 0) {
+      filtro.push(numeros[i]);
+    }
+  }
+  return filtro;
+}
+
+console.log(filterOdd(numeros));*/
+
+// funcion de orden superior
+
+// funcion de orden superior
+/*function filtrarNumeros(numeros, isMayorQueCinco) {
+  const filtroArr = [];
+  for (let i = 0; i < numeros.length; i++) {
+    isMayorQueCinco(numeros[i]) ? filtroArr.push(numeros[i]) : null;
+  }
+  return filtroArr;
+}
+
+console.log(filtrarNumeros(numeros, isMayorQueCinco));*/
+
+// funcion prototipada
+
+// callback
+function isEven(x) {
+  return x % 2 === 0;
+}
+
+// callback
+function isOdd(x) {
+  return x % 2 != 0;
+}
+
+// callback
+function esMayorQueCinco(x) {
+  return x > 5;
+}
+
+// polyfills
+/*Array.prototype.filtrarNumeros = function (callback) {
+  const filtroArr = [];
+  for (let i = 0; i < this.length; i++) {
+    callback(this[i]) ? filtroArr.push(this[i]) : null;
+  }
+  return filtroArr;
+};
+
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+console.log(numeros.filtrarNumeros(esMayorQueCinco));
+console.log(numeros.filtrarNumeros(isOdd));
+console.log(numeros.filtrarNumeros(isEven));
+console.log(numeros.filter(isEven));*/
+
+const numeros = [1, 2, 1, 2, 1, 2, 1, 2];
+
+const filtro = numeros.filter((numero) => numero.l);
