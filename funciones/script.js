@@ -128,6 +128,15 @@ console.log(numeros.filtrarNumeros(isOdd));
 console.log(numeros.filtrarNumeros(isEven));
 console.log(numeros.filter(isEven));*/
 
-const numeros = [1, 2, 1, 2, 1, 2, 1, 2];
+const paises = [
+  "mexico",
+  "peru",
+  "argentina",
+  "chile",
+  "brazil",
+  "colombia",
+  "guatemala",
+];
 
-const filtro = numeros.filter((numero) => numero.l);
+const filtro = paises.filter((pais) => pais.length > 6);
+console.log(filtro);

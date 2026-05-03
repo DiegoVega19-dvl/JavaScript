@@ -1,4 +1,4 @@
-let frutas = ["manzana", "platano", "melon", "sandia"];
+/*let frutas = ["manzana", "platano", "melon", "sandia"];*/
 
 // Metodo Push: sirver para añadir un nuevo elemento al final del arreglo
 
@@ -35,31 +35,60 @@ let frutas = ["manzana", "platano", "melon", "sandia"];
 //let newFrutas = frutas.includes("manzana");
 //console.log(newFrutas);
 
+// array functions
 
+// bucle forEach()
 
+/*const letters = ["a", "b", "c", "d", "f"];
 
-////METODOS PENDINTES////////////////////////////////
+letters.forEach((element) => console.log(element));
 
-//Metodo slice: Devuelve una copia superficial de una parte del array sin modificar el original.
+letters.forEach((element, index) => console.log(element, index));
 
-//Metodo map: Crea un nuevo array con los resultados de aplicar una función a cada elemento del array original.
+letters.forEach((element, index, array) => console.log(array[0]));*/
 
-//Metodo filter: Crea un nuevo array con todos los elementos que cumplan con la condición de una función
+// metodo every()
 
-//Metodo reduce: Aplica una función a cada elemento de un array (en este caso, en lugar de un solo valor), devolviendo un único valor.
+/*const letters = ["aa", "bb", "cc", "dd", "f"];
 
-//Metodo concat: Combina dos o más arrays y devuelve un nuevo array.
+const resultado = letters.some((letter) => letter.length === 1);
 
-//Metodo sort: Ordena los elementos del array en su lugar. Por defecto, ordena los elementos como cadenas de texto.
+console.log(resultado);*/
 
-//Metodo reverse: Invierte el orden de los elementos del array.
+/** every() necesita que el callback retorne un booleano, console.log siempre retorna undefined, asi que nunca se usa directamente como callback de every(), some(), filter() etc */
 
-//Metodo join: Convierte todos los elementos del array en una cadena, separados por un delimitador.
+// map
 
-//Metodo find: Devuelve el primer elemento que cumpla con la condición de una función.
+/*const paises = ["mexico", "argentina", "chile", "peru"];
 
-//Metodo findIndex: Devuelve el índice del primer elemento que cumpla con la condición de una función.
+const tamañoPaises = paises.map((pais) => pais.length);
 
+console.log(tamañoPaises);*/
 
+// filter
 
+/*const paises = ["peru", "portugal", "polonia", "mexico"];
 
+const paisesConP = paises.filter((pais) => pais.startsWith("p"));
+
+console.log(paisesConP);*/
+
+// find()
+
+const names = ["Ana", "Pablo", "Pedro", "Pancracio", "Heriberto"];
+
+const busqueda = names.find((name) => name.length === 5);
+
+console.log(busqueda);
+
+/** find se detiene la busqueda en cuento encuentre el primer elemento que cumple con la condicion. esa es la principal diferencia entre find y filter */
+
+// reduce
+
+const numeros = [1, 2, 3, 4, 5];
+
+const resultado = numeros.reduce((first, second) => {
+  return first + second;
+});
+
+console.log(resultado);
