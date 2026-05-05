@@ -75,20 +75,26 @@ console.log(paisesConP);*/
 
 // find()
 
-const names = ["Ana", "Pablo", "Pedro", "Pancracio", "Heriberto"];
+/*const names = ["Ana", "Pablo", "Pedro", "Pancracio", "Heriberto"];
 
 const busqueda = names.find((name) => name.length === 5);
 
-console.log(busqueda);
+console.log(busqueda);*/
 
 /** find se detiene la busqueda en cuento encuentre el primer elemento que cumple con la condicion. esa es la principal diferencia entre find y filter */
 
 // reduce
 
-const numeros = [1, 2, 3, 4, 5];
+/*const numeros = [1, 2, 3, 4, 5];
 
 const resultado = numeros.reduce((first, second) => {
   return first + second;
 });
 
-console.log(resultado);
+console.log(resultado);*/
+
+const letters = ["A", "B", "C"];
+
+letters.forEach((element, index) => {
+  console.log(`pos = ${index} letter = ${element}`);
+});

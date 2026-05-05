@@ -7,6 +7,8 @@ const persona = {
   comidaFavorita: "spagueti",
 };
 
+console.log(persona.edad);
+
 //para acceder a la propiedad de un objeto se usa la sintaxis de punto
 
 let comida = persona.comidaFavorita;
