@@ -18,6 +18,14 @@ for (let key in persona) {
   console.log(key, persona[key]);
 }
 
+const personaje = {
+  nombre: "Naruto",
+  edad: 16,
+  elemento: "aire",
+};
+
+console.log(personaje.nombre);
+
 var videoJuego = {
   nombre: "Minecraft",
   plataforma: "Xbox, PS5, PC, Switch",
